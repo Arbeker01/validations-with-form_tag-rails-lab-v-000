@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-  before_action :set_post!, only: [:show, :edit, :update]
   def show
     @post = Post.find(params[:id])
   end
